@@ -1,0 +1,155 @@
+Program,Year,Semester,Course Code,Descriptive Title,Lec Units,Lab Units,Total Units,Pre-requisite,Type
+BSCS,1,1,ENTREP101,The Entrepreneurial Mind,3,0,3,None,Core
+BSCS,1,1,SOCIO 101,The Contemporary World,3,0,3,None,Core
+BSCS,1,1,HUM 101,Art Appreciation,3,0,3,None,Core
+BSCS,1,1,MATH 101,Mathematics in the Modern World,3,0,3,None,Core
+BSCS,1,1,CC-INTCOM11,Introduction to Computing,3,0,3,None,Core
+BSCS,1,1,CC-COMPROG11,Computer Programming 1,2,1,3,None,Core
+BSCS,1,1,PE 101,Movement Competency Training (PATHFit 1),2,0,2,None,Core
+BSCS,1,1,NSTP 101,Nat'l Service Training Program 1,3,0,3,None,Core
+BSCS,1,2,PSYCH 101,Understanding the Self,3,0,3,None,Core
+BSCS,1,2,ENGL 101,Purposive Communication,3,0,3,None,Core
+BSCS,1,2,HIST 101,Readings in Philippine History,3,0,3,None,Core
+BSCS,1,2,CC-COMPROG12,Computer Programming 2,2,1,3,CC-COMPROG11,Core
+BSCS,1,2,CS-DISCRET12,Discrete Structures 1,3,0,3,CC-INTCOM11,Core
+BSCS,1,2,CC-TWRITE12,Tech. Writing & Presentation Skills in IT,3,0,3,"ENTREP101, CC-INTCOM11",Core
+BSCS,1,2,PE 102,Exercise-based Fitness Activities (PATHFit 2),2,0,2,PE 101,Core
+BSCS,1,2,NSTP 102,Nat'l Service Training Program 2,3,0,3,NSTP 101,Core
+BSCS,2,1,STS 101,"Science, Technology & Society",3,0,3,None,Core
+BSCS,2,1,RIZAL 101,"Life, Works & Writings of Dr. Jose Rizal",3,0,3,None,Core
+BSCS,2,1,CS-DISCRET21,Discrete Structures 2,3,0,3,CS-DISCRET12,Core
+BSCS,2,1,CC-DASTRUC21,Data Structures & Algorithms,2,1,3,CC-COMPROG12,Core
+BSCS,2,1,CC-QUAMETH21,Quantitative Methods w/ Prob. & Stat.,3,0,3,CS-DISCRET12,Core
+BSCS,2,1,CS-DIFFCAL21,Differential Calculus,3,0,3,CS-DISCRET12,Core
+BSCS,2,1,CS-OOPROG21,Object Oriented Programming,2,1,3,CC-COMPROG12,Core
+BSCS,2,1,PE 103,Sports and Dance (PATHFit 3),2,0,2,PE 102,Core
+BSCS,2,2,SOCIO 102,Gender and Society,3,0,3,None,Core
+BSCS,2,2,PHILO 101,Ethics,3,0,3,None,Core
+BSCS,2,2,CC-DIGILOG22,Digital Logic Design,2,1,3,CS-DISCRET21,Core
+BSCS,2,2,CC-APPSDEV22,Applications Dev't & Emerging Tech.,2,1,3,CC-DASTRUC21,Core
+BSCS,2,2,CS-DAALGO22,Design and Analysis of Algorithms,2,1,3,CC-DASTRUC21,Core
+BSCS,2,2,CC-DATACOM22,Data Communications,2,1,3,CC-INTCOM11,Core
+BSCS,2,2,CS-INTCALC22,Integral Calculus,3,0,3,CS-DIFFCAL21,Core
+BSCS,2,2,PE 104,"Sports, Outdoor and Adventure (PATHFit 4)",2,0,2,PE 103,Core
+BSCS,3,1,CS-IMDBSYS31,Information Management (DB Sys),2,1,3,CC-APPSDEV22,Core
+BSCS,3,1,CS-PROGLAN31,Programming Languages,2,1,3,CC-DIGILOG22,Core
+BSCS,3,1,CS-SOFTENG31,Software Engineering 1,3,0,3,"CS-OOPROG21, CS-DAALGO22",Core
+BSCS,3,1,CC-HCI31,Human Computer Interaction,2,1,3,CC-APPSDEV22,Core
+BSCS,3,1,CC-RESCOM31,Methods of Research in Computing,3,0,3,"CC-QUAMETH21, CC-TWRITE12",Core
+BSCS,3,1,CS-COMORG31,Comp. Organization & Assembly Lang.,2,1,3,CC-DIGILOG22,Core
+BSCS,3,1,CS-EL,CS Elective 1,3,0,3,**,Core
+BSCS,3,1,CS-FRE,Free Elective 2,3,0,3,**,Core
+BSCS,3,2,LIT 101,Literatures of the World,3,0,3,None,Core
+BSCS,3,2,CS-AUTOLAN32,Automata & Language Theory,3,0,3,CS-PROGLAN31,Core
+BSCS,3,2,CS-INFOSEC32,Information Assurance & Security,3,0,3,CS-IMDBSYS31,Core
+BSCS,3,2,CS-SOFTENG32,Software Engineering 2,2,1,3,CS-SOFTENG31,Core
+BSCS,3,2,CC-GRAPHICS32,Graphics and Visual Computing,2,1,3,CS-PROGLAN31,Core
+BSCS,3,2,CS-OPSYS32,Operating Systems,3,0,3,CS-COMORG31,Core
+BSCS,3,2,CS-EL,CS Elective 2,2,1,3,**,Core
+BSCS,3,2,CS-FRE,Free Elective 1,3,0,3,**,Core
+BSCS,4,1,CS-THESIS41,Thesis 1,3,0,3,***,Core
+BSCS,4,1,CS-PRACT41,Practicum,3,0,3,***,Core
+BSCS,4,1,CS-EL,CS Elective 3,3,0,3,***,Core
+BSCS,4,2,CS-THESIS42,Thesis 2,3,0,3,CS-THESIS41,Core
+BSCS,4,2,CC-PROFIS10,Professional Issues in Computing,3,0,3,***,Core
+BSCS,4,2,CS-FRE,Free Elective 3,3,0,3,***,Core
+BSIT,1,1,ENTREP 101,The Entrepreneurial Mind,3,0,3,None,Core
+BSIT,1,1,SOCIO 101,The Contemporary World,3,0,3,None,Core
+BSIT,1,1,MATH 101,Mathematics in the Modern World,3,0,3,None,Core
+BSIT,1,1,CC-INTCOM11,Introduction to Computing,3,0,3,None,Core
+BSIT,1,1,CC-COMPROG11,Computer Programming 1,2,1,3,None,Core
+BSIT,1,1,IT-WEBDEV11,Web Design & Development,2,1,3,None,Core
+BSIT,1,1,PE 101,Movement Competency Training (PATHFit 1),2,0,2,None,Core
+BSIT,1,1,NSTP 101,National Service Training Program 1,3,0,3,None,Core
+BSIT,1,2,HUM 101,Art Appreciation,3,0,3,None,Core
+BSIT,1,2,ENGL 101,Purposive Communication,3,0,3,None,Core
+BSIT,1,2,PSYCH 101,Understanding the Self,3,0,3,None,Core
+BSIT,1,2,HIST 101,Readings in Philippine History,3,0,3,None,Core
+BSIT,1,2,CC-COMPROG12,Computer Programming 2,2,1,3,CC-COMPROG11,Core
+BSIT,1,2,CC-DISCRET12,Discrete Structures,3,0,3,CC-INTCOM11,Core
+BSIT,1,2,PE 102,Exercise-based Fitness Activities (PATHFit 2),2,0,2,PE 101,Core
+BSIT,1,2,NSTP 102,National Service Training Program 2,3,0,3,NSTP 101,Core
+BSIT,2,1,STS 101,"Science, Technology & Society",3,0,3,None,Core
+BSIT,2,1,RIZAL 101,"Life, Works & Writings of Dr. Jose Rizal",3,0,3,None,Core
+BSIT,2,1,CC-DIGILOG21,Digital Logic Design,2,1,3,CC-DISCRET12,Core
+BSIT,2,1,IT-OOPROG21,Object Oriented Programming,2,1,3,CC-COMPROG12,Core
+BSIT,2,1,IT-SAD21,System Analysis & Design,3,0,3,CC-COMPROG12,Core
+BSIT,2,1,CC-ACCTG21,Accounting for IT,3,0,3,MATH 101,Core
+BSIT,2,1,CC-TWRITE21,Technical Writing & Presentation Skills in IT,3,0,3,"ENTREP 101, CC-INTCOM11",Core
+BSIT,2,1,PE 103,Sports and Dance (PATHFit 3),2,0,2,PE 102,Core
+BSIT,2,2,SOCIO 102,Gender and Society,3,0,3,None,Core
+BSIT,2,2,PHILO 101,Ethics,3,0,3,None,Core
+BSIT,2,2,CC-QUAMETH22,Quantitative Methods w/ Prob. & Stat.,3,0,3,CC-DISCRET12,Core
+BSIT,2,2,IT-PLATECH22,Platform Technologies w/ Op. Sys.,2,1,3,CC-DIGILOG21,Core
+BSIT,2,2,CC-APPSDEV22,Applications Dev't & Emerging Tech.,2,1,3,"IT-OOPROG21, IT-SAD21",Core
+BSIT,2,2,CC-DASTRUC22,Data Structures & Algorithms,2,1,3,IT-OOPROG21,Core
+BSIT,2,2,CC-DATACOM22,Data Communications,2,1,3,CC-DIGILOG21,Core
+BSIT,2,2,PE 104,"Sports, Outdoor and Adventure (PATHFit 4)",2,0,2,PE 103,Core
+BSIT,3,1,IT-IMDBSYS31,Information Management (DB Sys.1),2,1,3,CC-APPSDEV22,Core
+BSIT,3,1,IT-NETWORK31,Computer Networks,2,1,3,CC-DATACOM22,Core
+BSIT,3,1,IT-TESTQUA31,Testing & Quality Assurance,2,1,3,CC-APPSDEV22,Core
+BSIT,3,1,CC-HCI31,Human Computer Interaction,3,0,3,CC-APPSDEV22,Core
+BSIT,3,1,CC-RESCOM31,Methods of Research in Computing,3,0,3,"CC-TWRITE21, CC-QUAMETH22",Core
+BSIT,3,1,IT-EL,IT Elective 1,2,1,3,*,Core
+BSIT,3,1,IT-FRE,Free Elective 1,3,0,3,**,Core
+BSIT,3,1,IT-FRE,Free Elective 2,3,0,3,**,Core
+BSIT,3,2,IT-IMDBSYS32,Information Management (DB Sys. 2),2,1,3,IT-IMDBSYS31,Core
+BSIT,3,2,IT-INFOSEC32,Information Assurance & Security,2,1,3,"IT-IMDBSYS31, IT-NETWORK31",Core
+BSIT,3,2,IT-SYSARCH32,Systems Integration & Architecture,2,1,3,"IT-TESTQUA31, CC-HCI31",Core
+BSIT,3,2,CC-TECHNO32,Technopreneurship,3,0,3,CC-RESCOM31,Core
+BSIT,3,2,IT-INTPROG32,Integrative Prog'g & Technologies,2,1,3,IT-IMDBSYS31,Core
+BSIT,3,2,IT-SYSADMN32,Systems Administration & Maintenance,2,1,3,IT-NETWORK31,Core
+BSIT,3,2,IT-EL,IT Elective 2,2,1,3,*,Core
+BSIT,3,2,IT-FRE,Free Elective 3,3,0,3,**,Core
+BSIT,4,1,LIT 101,Literatures of the World,3,0,3,None,Core
+BSIT,4,1,IT-CPSTONE41,Capstone Project 1,3,0,3,**,Core
+BSIT,4,1,CC-PROFIS10,Professional Issues in Computing,3,0,3,**,Core
+BSIT,4,1,IT-EL,IT Elective 3,2,1,3,*,Core
+BSIT,4,2,CC-PRACT40,Practicum,3,0,3,***,Core
+BSIT,4,2,IT-CPSTONE42,Capstone Project 2,3,0,3,IT-CPSTONE41,Core
+BSCS,0,0,ELDNET1,.NET Programming Module 1,3,0,3,CS-IMDBSYS31,Elective
+BSCS,0,0,ELDNET2,.NET Programming Module 2,3,0,3,ELDNET1,Elective
+BSCS,0,0,ELJAVA,Advanced Java Programming,3,0,3,CS-IMDBSYS31,Elective
+BSCS,0,0,ELDROID1,ANDROID Programming Module 1,3,0,3,CC-APPSDEV22,Elective
+BSCS,0,0,ELDROID2,ANDROID Programming Module 2,3,0,3,ELDROID1,Elective
+BSCS,0,0,ELEMSYS,Embedded Systems & IoT,3,0,3,**,Elective
+BSCS,0,0,ELIM,Introduction to Imaging & Multimedia,3,0,3,**,Elective
+BSCS,0,0,EL3D,3D Game Development,3,0,3,**,Elective
+BSCS,0,0,ELNEURAL,Neural Networks & Deep Learning,3,0,3,**,Elective
+BSCS,0,0,ELASI,ASI-UC Near-Hire Program,3,0,3,***,Elective
+BSCS,0,0,ELPYTHON,Python Programming,3,0,3,**,Elective
+BSCS,0,0,FREDTHINK,Principles of Design Thinking,3,0,3,CC-HCI31,Free Elective
+BSCS,0,0,FREFORLAN,Foreign Language,3,0,3,**,Free Elective
+BSCS,0,0,FREIP,Introduction to Intellectual Property,3,0,3,**,Free Elective
+BSCS,0,0,FRETRNDS,Emerging Technologies in ICT,3,0,3,**,Free Elective
+BSCS,0,0,FRECD,Introduction to Compiler Design,3,0,3,***,Free Elective
+BSCS,0,0,FRECLOUD,Distributed Systems & Cloud Computing,3,0,3,CS-IMDBSYS31,Free Elective
+BSCS,0,0,FREAI,Fundamentals of Artificial Intelligence,3,0,3,**,Free Elective
+BSCS,0,0,FREAI2,Advanced Artificial Intelligence,3,0,3,***,Free Elective
+BSCS,0,0,FRECERT,Professional Certifications Review,3,0,3,***,Free Elective
+BSCS,0,0,FRETECHNO,Technopreneurship,3,0,3,***,Free Elective
+BSIT,0,0,ELPHP1,PHP Programming Module 1,3,0,3,IT-IMDBSYS31,Elective
+BSIT,0,0,ELPHP2,PHP Programming Module 2,3,0,3,ELPHP1,Elective
+BSIT,0,0,ELDNET1,.NET Programming Module 1,3,0,3,IT-PLATECH22,Elective
+BSIT,0,0,ELDNET2,.NET Programming Module 2,3,0,3,ELDNET1,Elective
+BSIT,0,0,ELDROID1,ANDROID Programming Module 1,3,0,3,CC-APPSDEV22,Elective
+BSIT,0,0,ELDROID2,ANDROID Programming Module 2,3,0,3,ELDROID1,Elective
+BSIT,0,0,ELCCNA1,"Enterprise Networking, Security and Automation",3,0,3,IT-NETWORK31,Elective
+BSIT,0,0,ELCCNA2,Infrastructure Automation,3,0,3,ELCCNA1,Elective
+BSIT,0,0,ELEMSYS,Embedded Systems & IoT,3,0,3,IT-INTPROG32,Elective
+BSIT,0,0,ELAI,Fundamentals of Artificial Intelligence,3,0,3,**,Elective
+BSIT,0,0,ELASI,ASI-UC Jumpstart Program,3,0,3,***,Elective
+BSIT,0,0,ELBIZAN1,Business Analytics Module 1,3,0,3,IT-IMDBSYS31,Elective
+BSIT,0,0,ELBIZAN2,Business Analytics Module 2,3,0,3,ELBIZAN1,Elective
+BSIT,0,0,ELPYTHON,Python Programming,3,0,3,**,Elective
+BSIT,0,0,FREDTHINK,Principles of Design Thinking,3,0,3,CC-HCI31,Free Elective
+BSIT,0,0,FREFORLAN,Foreign Language,3,0,3,**,Free Elective
+BSIT,0,0,FREIP,Introduction to Intellectual Property,3,0,3,**,Free Elective
+BSIT,0,0,FRETRNDS,Emerging Technologies in ICT,3,0,3,**,Free Elective
+BSIT,0,0,FREPM,Introduction to Project Management,3,0,3,IT-SAD21,Free Elective
+BSIT,0,0,FRECIS,Cloud Infrastructure Services,3,0,3,IT-IMDBSYS31,Free Elective
+BSIT,0,0,FREISM,Information Storage Management,3,0,3,IT-INFOSEC32,Free Elective
+BSIT,0,0,FREDX,Introduction to Digital Transformation,3,0,3,FREDTHINK,Free Elective
+BSIT,0,0,FRELEAN,Lean Startup Methodology,3,0,3,CC-TECHNO32,Free Elective
+BSIT,0,0,FREKYI,Know-Your-Industry/Corporate Readiness,3,0,3,***,Free Elective
+BSIT,0,0,FRECERT,Professional Certifications Review,3,0,3,***,Free Elective

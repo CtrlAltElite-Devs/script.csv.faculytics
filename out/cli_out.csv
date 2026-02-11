@@ -1,0 +1,155 @@
+shortname,fullname,category_path,startdate,enddate,visible
+ENTREP101,The Entrepreneurial Mind,todo,todo,todo,1
+SOCIO 101,The Contemporary World,todo,todo,todo,1
+HUM 101,Art Appreciation,todo,todo,todo,1
+MATH 101,Mathematics in the Modern World,todo,todo,todo,1
+CC-INTCOM11,Introduction to Computing,todo,todo,todo,1
+CC-COMPROG11,Computer Programming 1,todo,todo,todo,1
+PE 101,Movement Competency Training (PATHFit 1),todo,todo,todo,1
+NSTP 101,Nat'l Service Training Program 1,todo,todo,todo,1
+PSYCH 101,Understanding the Self,todo,todo,todo,1
+ENGL 101,Purposive Communication,todo,todo,todo,1
+HIST 101,Readings in Philippine History,todo,todo,todo,1
+CC-COMPROG12,Computer Programming 2,todo,todo,todo,1
+CS-DISCRET12,Discrete Structures 1,todo,todo,todo,1
+CC-TWRITE12,Tech. Writing & Presentation Skills in IT,todo,todo,todo,1
+PE 102,Exercise-based Fitness Activities (PATHFit 2),todo,todo,todo,1
+NSTP 102,Nat'l Service Training Program 2,todo,todo,todo,1
+STS 101,"Science, Technology & Society",todo,todo,todo,1
+RIZAL 101,"Life, Works & Writings of Dr. Jose Rizal",todo,todo,todo,1
+CS-DISCRET21,Discrete Structures 2,todo,todo,todo,1
+CC-DASTRUC21,Data Structures & Algorithms,todo,todo,todo,1
+CC-QUAMETH21,Quantitative Methods w/ Prob. & Stat.,todo,todo,todo,1
+CS-DIFFCAL21,Differential Calculus,todo,todo,todo,1
+CS-OOPROG21,Object Oriented Programming,todo,todo,todo,1
+PE 103,Sports and Dance (PATHFit 3),todo,todo,todo,1
+SOCIO 102,Gender and Society,todo,todo,todo,1
+PHILO 101,Ethics,todo,todo,todo,1
+CC-DIGILOG22,Digital Logic Design,todo,todo,todo,1
+CC-APPSDEV22,Applications Dev't & Emerging Tech.,todo,todo,todo,1
+CS-DAALGO22,Design and Analysis of Algorithms,todo,todo,todo,1
+CC-DATACOM22,Data Communications,todo,todo,todo,1
+CS-INTCALC22,Integral Calculus,todo,todo,todo,1
+PE 104,"Sports, Outdoor and Adventure (PATHFit 4)",todo,todo,todo,1
+CS-IMDBSYS31,Information Management (DB Sys),todo,todo,todo,1
+CS-PROGLAN31,Programming Languages,todo,todo,todo,1
+CS-SOFTENG31,Software Engineering 1,todo,todo,todo,1
+CC-HCI31,Human Computer Interaction,todo,todo,todo,1
+CC-RESCOM31,Methods of Research in Computing,todo,todo,todo,1
+CS-COMORG31,Comp. Organization & Assembly Lang.,todo,todo,todo,1
+CS-EL,CS Elective 1,todo,todo,todo,1
+CS-FRE,Free Elective 2,todo,todo,todo,1
+LIT 101,Literatures of the World,todo,todo,todo,1
+CS-AUTOLAN32,Automata & Language Theory,todo,todo,todo,1
+CS-INFOSEC32,Information Assurance & Security,todo,todo,todo,1
+CS-SOFTENG32,Software Engineering 2,todo,todo,todo,1
+CC-GRAPHICS32,Graphics and Visual Computing,todo,todo,todo,1
+CS-OPSYS32,Operating Systems,todo,todo,todo,1
+CS-EL,CS Elective 2,todo,todo,todo,1
+CS-FRE,Free Elective 1,todo,todo,todo,1
+CS-THESIS41,Thesis 1,todo,todo,todo,1
+CS-PRACT41,Practicum,todo,todo,todo,1
+CS-EL,CS Elective 3,todo,todo,todo,1
+CS-THESIS42,Thesis 2,todo,todo,todo,1
+CC-PROFIS10,Professional Issues in Computing,todo,todo,todo,1
+CS-FRE,Free Elective 3,todo,todo,todo,1
+ENTREP 101,The Entrepreneurial Mind,todo,todo,todo,1
+SOCIO 101,The Contemporary World,todo,todo,todo,1
+MATH 101,Mathematics in the Modern World,todo,todo,todo,1
+CC-INTCOM11,Introduction to Computing,todo,todo,todo,1
+CC-COMPROG11,Computer Programming 1,todo,todo,todo,1
+IT-WEBDEV11,Web Design & Development,todo,todo,todo,1
+PE 101,Movement Competency Training (PATHFit 1),todo,todo,todo,1
+NSTP 101,National Service Training Program 1,todo,todo,todo,1
+HUM 101,Art Appreciation,todo,todo,todo,1
+ENGL 101,Purposive Communication,todo,todo,todo,1
+PSYCH 101,Understanding the Self,todo,todo,todo,1
+HIST 101,Readings in Philippine History,todo,todo,todo,1
+CC-COMPROG12,Computer Programming 2,todo,todo,todo,1
+CC-DISCRET12,Discrete Structures,todo,todo,todo,1
+PE 102,Exercise-based Fitness Activities (PATHFit 2),todo,todo,todo,1
+NSTP 102,National Service Training Program 2,todo,todo,todo,1
+STS 101,"Science, Technology & Society",todo,todo,todo,1
+RIZAL 101,"Life, Works & Writings of Dr. Jose Rizal",todo,todo,todo,1
+CC-DIGILOG21,Digital Logic Design,todo,todo,todo,1
+IT-OOPROG21,Object Oriented Programming,todo,todo,todo,1
+IT-SAD21,System Analysis & Design,todo,todo,todo,1
+CC-ACCTG21,Accounting for IT,todo,todo,todo,1
+CC-TWRITE21,Technical Writing & Presentation Skills in IT,todo,todo,todo,1
+PE 103,Sports and Dance (PATHFit 3),todo,todo,todo,1
+SOCIO 102,Gender and Society,todo,todo,todo,1
+PHILO 101,Ethics,todo,todo,todo,1
+CC-QUAMETH22,Quantitative Methods w/ Prob. & Stat.,todo,todo,todo,1
+IT-PLATECH22,Platform Technologies w/ Op. Sys.,todo,todo,todo,1
+CC-APPSDEV22,Applications Dev't & Emerging Tech.,todo,todo,todo,1
+CC-DASTRUC22,Data Structures & Algorithms,todo,todo,todo,1
+CC-DATACOM22,Data Communications,todo,todo,todo,1
+PE 104,"Sports, Outdoor and Adventure (PATHFit 4)",todo,todo,todo,1
+IT-IMDBSYS31,Information Management (DB Sys.1),todo,todo,todo,1
+IT-NETWORK31,Computer Networks,todo,todo,todo,1
+IT-TESTQUA31,Testing & Quality Assurance,todo,todo,todo,1
+CC-HCI31,Human Computer Interaction,todo,todo,todo,1
+CC-RESCOM31,Methods of Research in Computing,todo,todo,todo,1
+IT-EL,IT Elective 1,todo,todo,todo,1
+IT-FRE,Free Elective 1,todo,todo,todo,1
+IT-FRE,Free Elective 2,todo,todo,todo,1
+IT-IMDBSYS32,Information Management (DB Sys. 2),todo,todo,todo,1
+IT-INFOSEC32,Information Assurance & Security,todo,todo,todo,1
+IT-SYSARCH32,Systems Integration & Architecture,todo,todo,todo,1
+CC-TECHNO32,Technopreneurship,todo,todo,todo,1
+IT-INTPROG32,Integrative Prog'g & Technologies,todo,todo,todo,1
+IT-SYSADMN32,Systems Administration & Maintenance,todo,todo,todo,1
+IT-EL,IT Elective 2,todo,todo,todo,1
+IT-FRE,Free Elective 3,todo,todo,todo,1
+LIT 101,Literatures of the World,todo,todo,todo,1
+IT-CPSTONE41,Capstone Project 1,todo,todo,todo,1
+CC-PROFIS10,Professional Issues in Computing,todo,todo,todo,1
+IT-EL,IT Elective 3,todo,todo,todo,1
+CC-PRACT40,Practicum,todo,todo,todo,1
+IT-CPSTONE42,Capstone Project 2,todo,todo,todo,1
+ELDNET1,.NET Programming Module 1,todo,todo,todo,1
+ELDNET2,.NET Programming Module 2,todo,todo,todo,1
+ELJAVA,Advanced Java Programming,todo,todo,todo,1
+ELDROID1,ANDROID Programming Module 1,todo,todo,todo,1
+ELDROID2,ANDROID Programming Module 2,todo,todo,todo,1
+ELEMSYS,Embedded Systems & IoT,todo,todo,todo,1
+ELIM,Introduction to Imaging & Multimedia,todo,todo,todo,1
+EL3D,3D Game Development,todo,todo,todo,1
+ELNEURAL,Neural Networks & Deep Learning,todo,todo,todo,1
+ELASI,ASI-UC Near-Hire Program,todo,todo,todo,1
+ELPYTHON,Python Programming,todo,todo,todo,1
+FREDTHINK,Principles of Design Thinking,todo,todo,todo,1
+FREFORLAN,Foreign Language,todo,todo,todo,1
+FREIP,Introduction to Intellectual Property,todo,todo,todo,1
+FRETRNDS,Emerging Technologies in ICT,todo,todo,todo,1
+FRECD,Introduction to Compiler Design,todo,todo,todo,1
+FRECLOUD,Distributed Systems & Cloud Computing,todo,todo,todo,1
+FREAI,Fundamentals of Artificial Intelligence,todo,todo,todo,1
+FREAI2,Advanced Artificial Intelligence,todo,todo,todo,1
+FRECERT,Professional Certifications Review,todo,todo,todo,1
+FRETECHNO,Technopreneurship,todo,todo,todo,1
+ELPHP1,PHP Programming Module 1,todo,todo,todo,1
+ELPHP2,PHP Programming Module 2,todo,todo,todo,1
+ELDNET1,.NET Programming Module 1,todo,todo,todo,1
+ELDNET2,.NET Programming Module 2,todo,todo,todo,1
+ELDROID1,ANDROID Programming Module 1,todo,todo,todo,1
+ELDROID2,ANDROID Programming Module 2,todo,todo,todo,1
+ELCCNA1,"Enterprise Networking, Security and Automation",todo,todo,todo,1
+ELCCNA2,Infrastructure Automation,todo,todo,todo,1
+ELEMSYS,Embedded Systems & IoT,todo,todo,todo,1
+ELAI,Fundamentals of Artificial Intelligence,todo,todo,todo,1
+ELASI,ASI-UC Jumpstart Program,todo,todo,todo,1
+ELBIZAN1,Business Analytics Module 1,todo,todo,todo,1
+ELBIZAN2,Business Analytics Module 2,todo,todo,todo,1
+ELPYTHON,Python Programming,todo,todo,todo,1
+FREDTHINK,Principles of Design Thinking,todo,todo,todo,1
+FREFORLAN,Foreign Language,todo,todo,todo,1
+FREIP,Introduction to Intellectual Property,todo,todo,todo,1
+FRETRNDS,Emerging Technologies in ICT,todo,todo,todo,1
+FREPM,Introduction to Project Management,todo,todo,todo,1
+FRECIS,Cloud Infrastructure Services,todo,todo,todo,1
+FREISM,Information Storage Management,todo,todo,todo,1
+FREDX,Introduction to Digital Transformation,todo,todo,todo,1
+FRELEAN,Lean Startup Methodology,todo,todo,todo,1
+FREKYI,Know-Your-Industry/Corporate Readiness,todo,todo,todo,1
+FRECERT,Professional Certifications Review,todo,todo,todo,1

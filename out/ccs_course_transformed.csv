@@ -1,0 +1,155 @@
+Full Course Name,Moodle Category,Total Units,Type
+ENTREP101 - The Entrepreneurial Mind,BSCS Year 1,3,Core
+SOCIO 101 - The Contemporary World,BSCS Year 1,3,Core
+HUM 101 - Art Appreciation,BSCS Year 1,3,Core
+MATH 101 - Mathematics in the Modern World,BSCS Year 1,3,Core
+CC-INTCOM11 - Introduction to Computing,BSCS Year 1,3,Core
+CC-COMPROG11 - Computer Programming 1,BSCS Year 1,3,Core
+PE 101 - Movement Competency Training (PATHFit 1),BSCS Year 1,2,Core
+NSTP 101 - Nat'l Service Training Program 1,BSCS Year 1,3,Core
+PSYCH 101 - Understanding the Self,BSCS Year 1,3,Core
+ENGL 101 - Purposive Communication,BSCS Year 1,3,Core
+HIST 101 - Readings in Philippine History,BSCS Year 1,3,Core
+CC-COMPROG12 - Computer Programming 2,BSCS Year 1,3,Core
+CS-DISCRET12 - Discrete Structures 1,BSCS Year 1,3,Core
+CC-TWRITE12 - Tech. Writing & Presentation Skills in IT,BSCS Year 1,3,Core
+PE 102 - Exercise-based Fitness Activities (PATHFit 2),BSCS Year 1,2,Core
+NSTP 102 - Nat'l Service Training Program 2,BSCS Year 1,3,Core
+"STS 101 - Science, Technology & Society",BSCS Year 2,3,Core
+"RIZAL 101 - Life, Works & Writings of Dr. Jose Rizal",BSCS Year 2,3,Core
+CS-DISCRET21 - Discrete Structures 2,BSCS Year 2,3,Core
+CC-DASTRUC21 - Data Structures & Algorithms,BSCS Year 2,3,Core
+CC-QUAMETH21 - Quantitative Methods w/ Prob. & Stat.,BSCS Year 2,3,Core
+CS-DIFFCAL21 - Differential Calculus,BSCS Year 2,3,Core
+CS-OOPROG21 - Object Oriented Programming,BSCS Year 2,3,Core
+PE 103 - Sports and Dance (PATHFit 3),BSCS Year 2,2,Core
+SOCIO 102 - Gender and Society,BSCS Year 2,3,Core
+PHILO 101 - Ethics,BSCS Year 2,3,Core
+CC-DIGILOG22 - Digital Logic Design,BSCS Year 2,3,Core
+CC-APPSDEV22 - Applications Dev't & Emerging Tech.,BSCS Year 2,3,Core
+CS-DAALGO22 - Design and Analysis of Algorithms,BSCS Year 2,3,Core
+CC-DATACOM22 - Data Communications,BSCS Year 2,3,Core
+CS-INTCALC22 - Integral Calculus,BSCS Year 2,3,Core
+"PE 104 - Sports, Outdoor and Adventure (PATHFit 4)",BSCS Year 2,2,Core
+CS-IMDBSYS31 - Information Management (DB Sys),BSCS Year 3,3,Core
+CS-PROGLAN31 - Programming Languages,BSCS Year 3,3,Core
+CS-SOFTENG31 - Software Engineering 1,BSCS Year 3,3,Core
+CC-HCI31 - Human Computer Interaction,BSCS Year 3,3,Core
+CC-RESCOM31 - Methods of Research in Computing,BSCS Year 3,3,Core
+CS-COMORG31 - Comp. Organization & Assembly Lang.,BSCS Year 3,3,Core
+CS-EL - CS Elective 1,BSCS Year 3,3,Core
+CS-FRE - Free Elective 2,BSCS Year 3,3,Core
+LIT 101 - Literatures of the World,BSCS Year 3,3,Core
+CS-AUTOLAN32 - Automata & Language Theory,BSCS Year 3,3,Core
+CS-INFOSEC32 - Information Assurance & Security,BSCS Year 3,3,Core
+CS-SOFTENG32 - Software Engineering 2,BSCS Year 3,3,Core
+CC-GRAPHICS32 - Graphics and Visual Computing,BSCS Year 3,3,Core
+CS-OPSYS32 - Operating Systems,BSCS Year 3,3,Core
+CS-EL - CS Elective 2,BSCS Year 3,3,Core
+CS-FRE - Free Elective 1,BSCS Year 3,3,Core
+CS-THESIS41 - Thesis 1,BSCS Year 4,3,Core
+CS-PRACT41 - Practicum,BSCS Year 4,3,Core
+CS-EL - CS Elective 3,BSCS Year 4,3,Core
+CS-THESIS42 - Thesis 2,BSCS Year 4,3,Core
+CC-PROFIS10 - Professional Issues in Computing,BSCS Year 4,3,Core
+CS-FRE - Free Elective 3,BSCS Year 4,3,Core
+ENTREP 101 - The Entrepreneurial Mind,BSIT Year 1,3,Core
+SOCIO 101 - The Contemporary World,BSIT Year 1,3,Core
+MATH 101 - Mathematics in the Modern World,BSIT Year 1,3,Core
+CC-INTCOM11 - Introduction to Computing,BSIT Year 1,3,Core
+CC-COMPROG11 - Computer Programming 1,BSIT Year 1,3,Core
+IT-WEBDEV11 - Web Design & Development,BSIT Year 1,3,Core
+PE 101 - Movement Competency Training (PATHFit 1),BSIT Year 1,2,Core
+NSTP 101 - National Service Training Program 1,BSIT Year 1,3,Core
+HUM 101 - Art Appreciation,BSIT Year 1,3,Core
+ENGL 101 - Purposive Communication,BSIT Year 1,3,Core
+PSYCH 101 - Understanding the Self,BSIT Year 1,3,Core
+HIST 101 - Readings in Philippine History,BSIT Year 1,3,Core
+CC-COMPROG12 - Computer Programming 2,BSIT Year 1,3,Core
+CC-DISCRET12 - Discrete Structures,BSIT Year 1,3,Core
+PE 102 - Exercise-based Fitness Activities (PATHFit 2),BSIT Year 1,2,Core
+NSTP 102 - National Service Training Program 2,BSIT Year 1,3,Core
+"STS 101 - Science, Technology & Society",BSIT Year 2,3,Core
+"RIZAL 101 - Life, Works & Writings of Dr. Jose Rizal",BSIT Year 2,3,Core
+CC-DIGILOG21 - Digital Logic Design,BSIT Year 2,3,Core
+IT-OOPROG21 - Object Oriented Programming,BSIT Year 2,3,Core
+IT-SAD21 - System Analysis & Design,BSIT Year 2,3,Core
+CC-ACCTG21 - Accounting for IT,BSIT Year 2,3,Core
+CC-TWRITE21 - Technical Writing & Presentation Skills in IT,BSIT Year 2,3,Core
+PE 103 - Sports and Dance (PATHFit 3),BSIT Year 2,2,Core
+SOCIO 102 - Gender and Society,BSIT Year 2,3,Core
+PHILO 101 - Ethics,BSIT Year 2,3,Core
+CC-QUAMETH22 - Quantitative Methods w/ Prob. & Stat.,BSIT Year 2,3,Core
+IT-PLATECH22 - Platform Technologies w/ Op. Sys.,BSIT Year 2,3,Core
+CC-APPSDEV22 - Applications Dev't & Emerging Tech.,BSIT Year 2,3,Core
+CC-DASTRUC22 - Data Structures & Algorithms,BSIT Year 2,3,Core
+CC-DATACOM22 - Data Communications,BSIT Year 2,3,Core
+"PE 104 - Sports, Outdoor and Adventure (PATHFit 4)",BSIT Year 2,2,Core
+IT-IMDBSYS31 - Information Management (DB Sys.1),BSIT Year 3,3,Core
+IT-NETWORK31 - Computer Networks,BSIT Year 3,3,Core
+IT-TESTQUA31 - Testing & Quality Assurance,BSIT Year 3,3,Core
+CC-HCI31 - Human Computer Interaction,BSIT Year 3,3,Core
+CC-RESCOM31 - Methods of Research in Computing,BSIT Year 3,3,Core
+IT-EL - IT Elective 1,BSIT Year 3,3,Core
+IT-FRE - Free Elective 1,BSIT Year 3,3,Core
+IT-FRE - Free Elective 2,BSIT Year 3,3,Core
+IT-IMDBSYS32 - Information Management (DB Sys. 2),BSIT Year 3,3,Core
+IT-INFOSEC32 - Information Assurance & Security,BSIT Year 3,3,Core
+IT-SYSARCH32 - Systems Integration & Architecture,BSIT Year 3,3,Core
+CC-TECHNO32 - Technopreneurship,BSIT Year 3,3,Core
+IT-INTPROG32 - Integrative Prog'g & Technologies,BSIT Year 3,3,Core
+IT-SYSADMN32 - Systems Administration & Maintenance,BSIT Year 3,3,Core
+IT-EL - IT Elective 2,BSIT Year 3,3,Core
+IT-FRE - Free Elective 3,BSIT Year 3,3,Core
+LIT 101 - Literatures of the World,BSIT Year 4,3,Core
+IT-CPSTONE41 - Capstone Project 1,BSIT Year 4,3,Core
+CC-PROFIS10 - Professional Issues in Computing,BSIT Year 4,3,Core
+IT-EL - IT Elective 3,BSIT Year 4,3,Core
+CC-PRACT40 - Practicum,BSIT Year 4,3,Core
+IT-CPSTONE42 - Capstone Project 2,BSIT Year 4,3,Core
+ELDNET1 - .NET Programming Module 1,BSCS Electives,3,Elective
+ELDNET2 - .NET Programming Module 2,BSCS Electives,3,Elective
+ELJAVA - Advanced Java Programming,BSCS Electives,3,Elective
+ELDROID1 - ANDROID Programming Module 1,BSCS Electives,3,Elective
+ELDROID2 - ANDROID Programming Module 2,BSCS Electives,3,Elective
+ELEMSYS - Embedded Systems & IoT,BSCS Electives,3,Elective
+ELIM - Introduction to Imaging & Multimedia,BSCS Electives,3,Elective
+EL3D - 3D Game Development,BSCS Electives,3,Elective
+ELNEURAL - Neural Networks & Deep Learning,BSCS Electives,3,Elective
+ELASI - ASI-UC Near-Hire Program,BSCS Electives,3,Elective
+ELPYTHON - Python Programming,BSCS Electives,3,Elective
+FREDTHINK - Principles of Design Thinking,BSCS Electives,3,Free Elective
+FREFORLAN - Foreign Language,BSCS Electives,3,Free Elective
+FREIP - Introduction to Intellectual Property,BSCS Electives,3,Free Elective
+FRETRNDS - Emerging Technologies in ICT,BSCS Electives,3,Free Elective
+FRECD - Introduction to Compiler Design,BSCS Electives,3,Free Elective
+FRECLOUD - Distributed Systems & Cloud Computing,BSCS Electives,3,Free Elective
+FREAI - Fundamentals of Artificial Intelligence,BSCS Electives,3,Free Elective
+FREAI2 - Advanced Artificial Intelligence,BSCS Electives,3,Free Elective
+FRECERT - Professional Certifications Review,BSCS Electives,3,Free Elective
+FRETECHNO - Technopreneurship,BSCS Electives,3,Free Elective
+ELPHP1 - PHP Programming Module 1,BSIT Electives,3,Elective
+ELPHP2 - PHP Programming Module 2,BSIT Electives,3,Elective
+ELDNET1 - .NET Programming Module 1,BSIT Electives,3,Elective
+ELDNET2 - .NET Programming Module 2,BSIT Electives,3,Elective
+ELDROID1 - ANDROID Programming Module 1,BSIT Electives,3,Elective
+ELDROID2 - ANDROID Programming Module 2,BSIT Electives,3,Elective
+"ELCCNA1 - Enterprise Networking, Security and Automation",BSIT Electives,3,Elective
+ELCCNA2 - Infrastructure Automation,BSIT Electives,3,Elective
+ELEMSYS - Embedded Systems & IoT,BSIT Electives,3,Elective
+ELAI - Fundamentals of Artificial Intelligence,BSIT Electives,3,Elective
+ELASI - ASI-UC Jumpstart Program,BSIT Electives,3,Elective
+ELBIZAN1 - Business Analytics Module 1,BSIT Electives,3,Elective
+ELBIZAN2 - Business Analytics Module 2,BSIT Electives,3,Elective
+ELPYTHON - Python Programming,BSIT Electives,3,Elective
+FREDTHINK - Principles of Design Thinking,BSIT Electives,3,Free Elective
+FREFORLAN - Foreign Language,BSIT Electives,3,Free Elective
+FREIP - Introduction to Intellectual Property,BSIT Electives,3,Free Elective
+FRETRNDS - Emerging Technologies in ICT,BSIT Electives,3,Free Elective
+FREPM - Introduction to Project Management,BSIT Electives,3,Free Elective
+FRECIS - Cloud Infrastructure Services,BSIT Electives,3,Free Elective
+FREISM - Information Storage Management,BSIT Electives,3,Free Elective
+FREDX - Introduction to Digital Transformation,BSIT Electives,3,Free Elective
+FRELEAN - Lean Startup Methodology,BSIT Electives,3,Free Elective
+FREKYI - Know-Your-Industry/Corporate Readiness,BSIT Electives,3,Free Elective
+FRECERT - Professional Certifications Review,BSIT Electives,3,Free Elective

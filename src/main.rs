@@ -72,11 +72,28 @@ fn get_category_path(
     )
 }
 
-fn get_course_date(row: &moodle_course_builder::Record, date: String) -> String {
+fn get_course_start_date(
+    row: &moodle_course_builder::Record,
+    start_date: String,
+    end_date: String,
+) -> String {
     let semester = row.get("Semester").map(|s| s.as_str()).unwrap_or("");
     match semester {
-        "1" => format!("{}-08-01", &date[0..4]),
-        "2" => format!("{}-06-01", &date[0..4]),
+        "1" => format!("{}-08-01", &start_date[0..4]),
+        "2" => format!("{}-01-20", &end_date[0..4]),
+        &_ => "".to_string(),
+    }
+}
+
+fn get_course_end_date(
+    row: &moodle_course_builder::Record,
+    end_date: String,
+    start_date: String,
+) -> String {
+    let semester = row.get("Semester").map(|s| s.as_str()).unwrap_or("");
+    match semester {
+        "1" => format!("{}-12-18", &start_date[0..4]),
+        "2" => format!("{}-06-01", &end_date[0..4]),
         &_ => "".to_string(),
     }
 }
@@ -107,8 +124,12 @@ fn main() -> Result<(), Box<dyn Error>> {
                 end_date.clone(),
             )
         })
-        .derive("startdate", |row| get_course_date(row, start_date.clone()))
-        .derive("enddate", |row| get_course_date(row, end_date.clone()))
+        .derive("startdate", |row| {
+            get_course_start_date(row, start_date.clone(), end_date.clone())
+        })
+        .derive("enddate", |row| {
+            get_course_end_date(row, end_date.clone(), start_date.clone())
+        })
         .derive("visible", |_| "1".to_string())
         .select(vec![
             "shortname",

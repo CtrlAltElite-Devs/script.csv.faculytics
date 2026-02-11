@@ -54,23 +54,9 @@ BSCS,4,2,CS-THESIS42,Thesis 2,3,0,3,CS-THESIS41,Core
 BSCS,4,2,CC-PROFIS10,Professional Issues in Computing,3,0,3,***,Core
 BSCS,4,2,CS-FRE,Free Elective 3,3,0,3,***,Core
 BSCS,4,2,ELDNET1,.NET Programming Module 1,3,0,3,CS-IMDBSYS31,Elective
-BSCS,0,0,ELDNET2,.NET Programming Module 2,3,0,3,ELDNET1,Elective
-BSCS,0,0,ELJAVA,Advanced Java Programming,3,0,3,CS-IMDBSYS31,Elective
-BSCS,0,0,ELDROID1,ANDROID Programming Module 1,3,0,3,CC-APPSDEV22,Elective
-BSCS,0,0,ELDROID2,ANDROID Programming Module 2,3,0,3,ELDROID1,Elective
+BSCS,3,1,ELDROID1,ANDROID Programming Module 1,3,0,3,CC-APPSDEV22,Elective
+BSCS,3,2,ELDROID2,ANDROID Programming Module 2,3,0,3,ELDROID1,Elective
 BSCS,4,2,ELEMSYS,Embedded Systems & IoT,3,0,3,**,Elective
-BSCS,0,0,ELIM,Introduction to Imaging & Multimedia,3,0,3,**,Elective
-BSCS,0,0,EL3D,3D Game Development,3,0,3,**,Elective
-BSCS,0,0,ELNEURAL,Neural Networks & Deep Learning,3,0,3,**,Elective
-BSCS,0,0,ELASI,ASI-UC Near-Hire Program,3,0,3,***,Elective
-BSCS,0,0,ELPYTHON,Python Programming,3,0,3,**,Elective
-BSCS,0,0,FREDTHINK,Principles of Design Thinking,3,0,3,CC-HCI31,Free Elective
-BSCS,0,0,FREFORLAN,Foreign Language,3,0,3,**,Free Elective
-BSCS,0,0,FREIP,Introduction to Intellectual Property,3,0,3,**,Free Elective
-BSCS,0,0,FRETRNDS,Emerging Technologies in ICT,3,0,3,**,Free Elective
-BSCS,0,0,FRECD,Introduction to Compiler Design,3,0,3,***,Free Elective
-BSCS,0,0,FRECLOUD,Distributed Systems & Cloud Computing,3,0,3,CS-IMDBSYS31,Free Elective
-BSCS,0,0,FREAI,Fundamentals of Artificial Intelligence,3,0,3,**,Free Elective
-BSCS,0,0,FREAI2,Advanced Artificial Intelligence,3,0,3,***,Free Elective
-BSCS,0,0,FRECERT,Professional Certifications Review,3,0,3,***,Free Elective
-BSCS,0,0,FRETECHNO,Technopreneurship,3,0,3,***,Free Elective
+BSCS,4,1,FRETRNDS,Emerging Technologies in ICT,3,0,3,**,Free Elective
+BSCS,3,2,FRECD,Introduction to Compiler Design,3,0,3,***,Free Elective
+BSCS,3,1,FREAI,Fundamentals of Artificial Intelligence,3,0,3,**,Free Elective

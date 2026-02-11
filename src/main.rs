@@ -55,6 +55,7 @@ struct Cli {
 fn get_category_path(
     row: &moodle_course_builder::Record,
     campus: String,
+    dept: String,
     start_date: String,
     end_date: String,
 ) -> String {
@@ -67,7 +68,7 @@ fn get_category_path(
         "{} / {} / {} / {}",
         campus.to_uppercase(),
         semester_tag,
-        campus.to_uppercase(),
+        dept.to_uppercase(),
         program
     )
 }
@@ -120,6 +121,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             get_category_path(
                 row,
                 cli.campus.to_string(),
+                cli.dept.to_string(),
                 start_date.clone(),
                 end_date.clone(),
             )

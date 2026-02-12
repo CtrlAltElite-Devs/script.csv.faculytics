@@ -1,5 +1,7 @@
 use clap::{Parser, ValueEnum};
 use moodle_course_builder::Pipeline;
+use rand::Rng;
+use rand::rngs::OsRng;
 use std::error::Error;
 
 #[derive(Copy, Clone, PartialEq, Eq, PartialOrd, Ord, ValueEnum, Debug)]
@@ -40,11 +42,11 @@ struct Cli {
     campus: Campus,
 
     /// Start date (YYYY-MM-DD)
-    #[arg(long)]
+    #[arg(long, default_value = "2025-08-01")]
     start_date: String,
 
     /// End date (YYYY-MM-DD)
-    #[arg(long)]
+    #[arg(long, default_value = "2026-06-01")]
     end_date: String,
 
     /// Department name
@@ -99,6 +101,37 @@ fn get_course_end_date(
     }
 }
 
+fn get_short_name(
+    row: &moodle_course_builder::Record,
+    campus: String,
+    start_date: String,
+    end_date: String,
+) -> String {
+    let semester = row.get("Semester").map(|s| s.as_str()).unwrap_or("");
+    let start_year = &start_date[2..4];
+    let end_year = &end_date[2..4];
+    let semester_tag = format!("S{}{}{}", semester, start_year, end_year);
+    let course_code = row
+        .get("Course Code")
+        .map(|s| s.as_str())
+        .unwrap_or("")
+        .replace(' ', "");
+    let course_code_with_edp = format!("{}-{}", course_code, generate_random_edp_code());
+    format!(
+        "{}-{}-{}",
+        campus.to_uppercase(),
+        semester_tag,
+        course_code_with_edp
+    )
+}
+
+pub fn generate_random_edp_code() -> String {
+    let mut rng = OsRng;
+
+    let number: u32 = rng.gen_range(0..100_000); // 0 to 99999 inclusive
+    format!("{:05}", number) // pads with leading zeros
+}
+
 fn main() -> Result<(), Box<dyn Error>> {
     let cli = Cli::parse();
 
@@ -112,7 +145,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     Pipeline::new()
         .from_file(&cli.in_path)?
         .derive("shortname", |row| {
-            row.get("Course Code").cloned().unwrap_or_default()
+            get_short_name(
+                row,
+                cli.campus.to_string(),
+                start_date.clone(),
+                end_date.clone(),
+            )
         })
         .derive("fullname", |row| {
             row.get("Descriptive Title").cloned().unwrap_or_default()

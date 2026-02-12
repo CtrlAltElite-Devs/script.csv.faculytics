@@ -19,7 +19,7 @@ impl Pipeline {
     pub fn from_file(mut self, path: &str) -> Result<Self, Box<dyn Error>> {
         let file = File::open(path)?;
         let mut rdr = ReaderBuilder::new().from_reader(file);
-        
+
         let headers = rdr.headers()?.clone();
         let mut records = Vec::new();
 
@@ -63,6 +63,9 @@ impl Pipeline {
     }
 
     pub fn to_file(self, path: &str, headers: Vec<&str>) -> Result<(), Box<dyn Error>> {
+        if let Some(parent) = std::path::Path::new(path).parent() {
+            std::fs::create_dir_all(parent)?;
+        }
         let file = File::create(path)?;
         let mut wtr = WriterBuilder::new().from_writer(file);
 

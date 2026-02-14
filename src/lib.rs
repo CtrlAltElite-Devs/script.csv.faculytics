@@ -25,12 +25,39 @@ impl Pipeline {
         }
     }
 
+    pub fn from_records(records: Vec<Record>) -> Self {
+        Self { records }
+    }
+
     pub fn len(&self) -> usize {
         self.records.len()
     }
 
     pub fn records(&self) -> &[Record] {
         &self.records
+    }
+
+    pub fn filter<F>(mut self, predicate: F) -> Self
+    where
+        F: Fn(&Record) -> bool,
+    {
+        let pb = ProgressBar::new(self.records.len() as u64);
+        pb.set_style(default_style());
+        pb.set_message("Filtering records...");
+
+        let initial_count = self.records.len();
+        self.records.retain(|record| {
+            let keep = predicate(record);
+            pb.inc(1);
+            keep
+        });
+
+        let filtered_count = self.records.len();
+        pb.finish_with_message(format!(
+            "Filtered records: {} -> {}",
+            initial_count, filtered_count
+        ));
+        self
     }
 
     pub fn from_file(mut self, path: &str) -> Result<Self, Box<dyn Error>> {

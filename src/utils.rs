@@ -2,6 +2,9 @@ use crate::constants::*;
 use moodle_course_builder::Record;
 use rand::Rng;
 use rand::rngs::OsRng;
+use chrono::Local;
+use fake::faker::name::en::{FirstName, LastName};
+use fake::Fake;
 
 pub fn get_category_path(
     row: &Record,
@@ -65,4 +68,23 @@ pub fn generate_random_edp_code() -> String {
 
     let number: u32 = rng.gen_range(0..100_000); // 0 to 99999 inclusive
     format!("{:05}", number) // pads with leading zeros
+}
+
+pub fn generate_username(campus: &str) -> String {
+    let now = Local::now();
+    let yy = now.format("%y").to_string();
+    let m = now.format("%m").to_string().trim_start_matches('0').to_string();
+    let d = now.format("%d").to_string().trim_start_matches('0').to_string();
+    
+    let mut rng = OsRng;
+    let random_digits: u32 = rng.gen_range(0..10_000);
+    
+    format!("{}-{}{}{}{:04}", campus.to_lowercase(), yy, m, d, random_digits)
+}
+
+pub fn generate_fake_user() -> (String, String, String) {
+    let first_name: String = FirstName().fake();
+    let last_name: String = LastName().fake();
+    let email = format!("{}.{}@email.com", first_name.to_lowercase(), last_name.to_lowercase());
+    (first_name, last_name, email)
 }

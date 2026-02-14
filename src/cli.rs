@@ -1,12 +1,27 @@
-use clap::Parser;
 use crate::campus::Campus;
+use clap::{Parser, ValueEnum};
+
+#[derive(Copy, Clone, PartialEq, Eq, PartialOrd, Ord, ValueEnum, Debug)]
+pub enum CommandMode {
+    Course,
+    UserSeed,
+    UserEnrol,
+}
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
 pub struct Cli {
+    /// Mapping mode
+    #[arg(long, value_enum, default_value_t = CommandMode::Course)]
+    pub mode: CommandMode,
+
+    // Courses where the users will be enrolled
+    #[arg(long, num_args = 1.., required_if_eq("mode", "user-enrol"))]
+    pub courses: Vec<String>,
+
     /// Path to the input CSV file
-    #[arg(long)]
-    pub in_path: String,
+    #[arg(long, required_if_eq("mode", "course"))]
+    pub in_path: Option<String>,
 
     /// Path to the output CSV file
     #[arg(long)]
@@ -26,7 +41,11 @@ pub struct Cli {
 
     /// Department name
     #[arg(long)]
-    pub dept: String,
+    pub dept: Option<String>,
+
+    /// Number of users to generate
+    #[arg(long, default_value = "1")]
+    pub count: usize,
 
     /// Run transformations without writing output
     #[arg(long)]

@@ -1,11 +1,13 @@
 mod campus;
 mod cli;
 mod constants;
+mod dry_run;
 mod utils;
 
 use crate::constants::*;
 use clap::Parser;
 use cli::Cli;
+use dry_run::{print_preview_table, report_missing};
 use moodle_course_builder::Pipeline;
 use std::error::Error;
 use utils::{
@@ -35,7 +37,7 @@ fn main() -> Result<(), Box<dyn Error>> {
         HEADER_VISIBLE,
     ];
 
-    Pipeline::new()
+    let pipeline = Pipeline::new()
         .from_file(&cli.in_path)?
         .derive(HEADER_SHORTNAME, |row| {
             get_short_name(row, &campus_upper, start_year_short, end_year_short)
@@ -61,8 +63,23 @@ fn main() -> Result<(), Box<dyn Error>> {
             get_course_end_date(row, start_year_full, end_year_full)
         })
         .derive(HEADER_VISIBLE, |_| VALUE_VISIBLE_TRUE.to_string())
-        .select(output_headers.clone())
-        .to_file(&cli.out_path, output_headers)?;
+        .select(output_headers.clone());
+
+    if cli.dry_run {
+        println!(
+            "Dry run: would write {} records to {}",
+            pipeline.len(),
+            cli.out_path
+        );
+        if let Some(limit) = cli.dry_run_show {
+            println!("Previewing first {} records:", limit);
+            print_preview_table(pipeline.records(), &output_headers, limit);
+        }
+        report_missing(pipeline.records(), &output_headers);
+        return Ok(());
+    }
+
+    pipeline.to_file(&cli.out_path, output_headers)?;
 
     println!("Transformation complete.");
 

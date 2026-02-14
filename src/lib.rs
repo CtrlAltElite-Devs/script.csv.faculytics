@@ -25,6 +25,14 @@ impl Pipeline {
         }
     }
 
+    pub fn len(&self) -> usize {
+        self.records.len()
+    }
+
+    pub fn records(&self) -> &[Record] {
+        &self.records
+    }
+
     pub fn from_file(mut self, path: &str) -> Result<Self, Box<dyn Error>> {
         let file = File::open(path)?;
         let mut rdr = ReaderBuilder::new().from_reader(file);

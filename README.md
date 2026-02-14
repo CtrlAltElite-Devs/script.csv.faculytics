@@ -12,7 +12,9 @@ cargo build --release
   --campus <CAMPUS> \
   --start-date <YYYY-MM-DD> \
   --end-date <YYYY-MM-DD> \
-  --dept <DEPARTMENT>
+  --dept <DEPARTMENT> \
+  --dry-run \
+  --dry-run-show 5
 ```
 
 ## Usage
@@ -26,7 +28,9 @@ cargo run -- \
   --campus <CAMPUS> \
   --start-date <YYYY-MM-DD> \
   --end-date <YYYY-MM-DD> \
-  --dept <DEPARTMENT>
+  --dept <DEPARTMENT> \
+  --dry-run \
+  --dry-run-show 5
 ```
 
 ## Arguments
@@ -39,6 +43,8 @@ cargo run -- \
 | `--start-date` | Start of academic year. | `2025-08-01` |
 | `--end-date` | End of academic year. | `2026-06-01` |
 | `--dept` | Department name/code. | `ccs` |
+| `--dry-run` | Run transforms without writing output. | |
+| `--dry-run-show` | Show first N output records (dry run only). | `5` |
 
 ## Input CSV requirements
 
@@ -69,7 +75,9 @@ cargo run -- \
   --campus ucmn \
   --start-date 2025-08-01 \
   --end-date 2026-06-01 \
-  --dept ccs
+  --dept ccs \
+  --dry-run \
+  --dry-run-show 5
 ```
 
 ## Directory notes

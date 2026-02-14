@@ -19,6 +19,7 @@ pub const VALUE_VISIBLE_TRUE: &str = "1";
 // Semester Identifiers
 pub const SEMESTER_1: &str = "1";
 pub const SEMESTER_2: &str = "2";
+pub const KNOWN_SEMESTER_TAGS: [&str; 1] = ["S22526"];
 
 // Date Components (MM-DD)
 pub const DATE_SEM1_START: &str = "08-01";

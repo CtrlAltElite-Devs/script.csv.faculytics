@@ -27,4 +27,12 @@ pub struct Cli {
     /// Department name
     #[arg(long)]
     pub dept: String,
+
+    /// Run transformations without writing output
+    #[arg(long)]
+    pub dry_run: bool,
+
+    /// Show the first N output records in dry run mode
+    #[arg(long, requires = "dry_run")]
+    pub dry_run_show: Option<usize>,
 }

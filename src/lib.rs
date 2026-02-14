@@ -25,6 +25,14 @@ impl Pipeline {
         }
     }
 
+    pub fn len(&self) -> usize {
+        self.records.len()
+    }
+
+    pub fn records(&self) -> &[Record] {
+        &self.records
+    }
+
     pub fn from_file(mut self, path: &str) -> Result<Self, Box<dyn Error>> {
         let file = File::open(path)?;
         let mut rdr = ReaderBuilder::new().from_reader(file);
@@ -101,13 +109,46 @@ impl Pipeline {
         let file = File::create(path)?;
         let mut wtr = WriterBuilder::new().from_writer(file);
 
-        let pb = ProgressBar::new(self.records.len() as u64);
+        let mut written_count = 0usize;
+        let mut skipped_count = 0usize;
+        for record in &self.records {
+            let mut complete = true;
+            for &header in &headers {
+                match record.get(header) {
+                    Some(value) if !value.trim().is_empty() => {}
+                    _ => {
+                        complete = false;
+                        break;
+                    }
+                }
+            }
+            if complete {
+                written_count += 1;
+            } else {
+                skipped_count += 1;
+            }
+        }
+
+        let pb = ProgressBar::new(written_count as u64);
         pb.set_style(default_style());
         pb.set_message(format!("Writing to {}...", path));
 
         wtr.write_record(&headers)?;
 
         for record in self.records {
+            let mut complete = true;
+            for &header in &headers {
+                match record.get(header) {
+                    Some(value) if !value.trim().is_empty() => {}
+                    _ => {
+                        complete = false;
+                        break;
+                    }
+                }
+            }
+            if !complete {
+                continue;
+            }
             let mut row = Vec::new();
             for &header in &headers {
                 row.push(record.get(header).cloned().unwrap_or_default());
@@ -117,7 +158,14 @@ impl Pipeline {
         }
 
         wtr.flush()?;
-        pb.finish_with_message(format!("Finished writing to {}", path));
+        if skipped_count > 0 {
+            pb.finish_with_message(format!(
+                "Finished writing to {} (written {}, skipped {} incomplete)",
+                path, written_count, skipped_count
+            ));
+        } else {
+            pb.finish_with_message(format!("Finished writing to {} (written {})", path, written_count));
+        }
         Ok(())
     }
 }

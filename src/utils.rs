@@ -16,17 +16,16 @@ pub fn get_category_path(
         .unwrap_or(DEFAULT_PROGRAM);
     let semester = row.get(HEADER_SEMESTER).map(|s| s.as_str()).unwrap_or("");
     let semester_tag = format!("S{}{}{}", semester, start_year_short, end_year_short);
+    if !KNOWN_SEMESTER_TAGS.contains(&semester_tag.as_str()) {
+        return String::new();
+    }
     format!(
         "{} / {} / {} / {}",
         campus_upper, semester_tag, dept_upper, program
     )
 }
 
-pub fn get_course_start_date(
-    row: &Record,
-    start_year_full: &str,
-    end_year_full: &str,
-) -> String {
+pub fn get_course_start_date(row: &Record, start_year_full: &str, end_year_full: &str) -> String {
     let semester = row.get(HEADER_SEMESTER).map(|s| s.as_str()).unwrap_or("");
     match semester {
         SEMESTER_1 => format!("{}-{}", start_year_full, DATE_SEM1_START),
@@ -35,11 +34,7 @@ pub fn get_course_start_date(
     }
 }
 
-pub fn get_course_end_date(
-    row: &Record,
-    start_year_full: &str,
-    end_year_full: &str,
-) -> String {
+pub fn get_course_end_date(row: &Record, start_year_full: &str, end_year_full: &str) -> String {
     let semester = row.get(HEADER_SEMESTER).map(|s| s.as_str()).unwrap_or("");
     match semester {
         SEMESTER_1 => format!("{}-{}", start_year_full, DATE_SEM1_END),
@@ -62,10 +57,7 @@ pub fn get_short_name(
         .unwrap_or("")
         .replace(' ', "");
     let course_code_with_edp = format!("{}-{}", course_code, generate_random_edp_code());
-    format!(
-        "{}-{}-{}",
-        campus_upper, semester_tag, course_code_with_edp
-    )
+    format!("{}-{}-{}", campus_upper, semester_tag, course_code_with_edp)
 }
 
 pub fn generate_random_edp_code() -> String {

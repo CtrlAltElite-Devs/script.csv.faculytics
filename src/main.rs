@@ -156,24 +156,56 @@ fn run_user_seeding(cli: Cli) -> Result<(), Box<dyn Error>> {
 fn run_user_enrolling(cli: Cli) -> Result<(), Box<dyn Error>> {
     let in_path = cli.in_path.ok_or("cli --in-path not defined")?;
 
-    let output_headers = vec![
+    let mut output_headers: Vec<&str> = vec![
         HEADER_USERNAME,
         HEADER_FIRSTNAME,
         HEADER_LASTNAME,
+        HEADER_EMAIL,
         HEADER_PASSWORD,
     ];
 
-    let pipeline = Pipeline::new()
-        .from_file(&in_path)?
-        .select(output_headers.clone());
+    let mut dynamic_headers: Vec<String> = Vec::new();
+    for (i, _) in cli.courses.iter().enumerate() {
+        dynamic_headers.push(format!("course{}", i + 1));
+        dynamic_headers.push(format!("role{}", i + 1));
+    }
+    let dynamic_headers_refs: Vec<&str> = dynamic_headers.iter().map(|s| s.as_str()).collect();
+    output_headers.extend(dynamic_headers_refs);
 
-    // get the records in memory from the pipeline variable above
+    let mut pipeline = Pipeline::new().from_file(&in_path)?;
 
-    // each record in the pipeline will be modified,
-    // foreach record append it with course1, role1....courseN, roleN
-    // map the coureses and each role1..roleN will have the value of "Student"
-    // implement dry runs mechanism
-    // then output to cli.out_path
+    // Transform records to add course and role information
+    let transformed_records = pipeline
+        .records()
+        .iter()
+        .map(|record| {
+            let mut new_record = record.clone();
+            for (i, course_name) in cli.courses.iter().enumerate() {
+                new_record.insert(format!("course{}", i + 1), course_name.clone());
+                new_record.insert(format!("role{}", i + 1), VALUE_ROLE_STUDENT.to_string());
+            }
+            new_record
+        })
+        .collect::<Vec<Record>>();
 
-    todo!()
+    pipeline = Pipeline::from_records(transformed_records);
+    pipeline = pipeline.select(output_headers.clone());
+
+    if cli.dry_run {
+        println!(
+            "Dry run: would enroll {} users and write to {}",
+            pipeline.len(),
+            cli.out_path
+        );
+        if let Some(limit) = cli.dry_run_show {
+            println!("Previewing first {} enrollments:", limit);
+            print_preview_table(pipeline.records(), &output_headers, limit);
+        }
+        return Ok(());
+    }
+
+    pipeline.to_file(&cli.out_path, output_headers)?;
+
+    println!("User enrollment complete.");
+    Ok(())
 }

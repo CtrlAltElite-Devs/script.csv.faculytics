@@ -24,7 +24,7 @@ pub const HEADER_PASSWORD: &str = "password";
 // Default Values
 pub const DEFAULT_PROGRAM: &str = "GEN";
 pub const VALUE_VISIBLE_TRUE: &str = "1";
-// pub const VALUE_ROLE_STUDENT: &str = "student";
+pub const VALUE_ROLE_STUDENT: &str = "student";
 pub const DEFAULT_PASSWORD: &str = "User123#";
 
 // Semester Identifiers

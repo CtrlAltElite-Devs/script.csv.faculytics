@@ -16,7 +16,7 @@ pub struct Cli {
     pub mode: CommandMode,
 
     // Courses where the users will be enrolled
-    #[arg(long, num_args = 1.., required = true, required_if_eq("mode", "user-enrol"))]
+    #[arg(long, num_args = 1.., required_if_eq("mode", "user-enrol"))]
     pub courses: Vec<String>,
 
     /// Path to the input CSV file

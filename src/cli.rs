@@ -6,6 +6,8 @@ pub enum CommandMode {
     Course,
     UserSeed,
     UserEnrol,
+    FacultySeed,
+    FacultyEnrol,
 }
 
 #[derive(Parser)]
